@@ -25,4 +25,35 @@ Spoilers:
 
 thinking:
 
-	看了一下题目觉得还挺简单的，但是看了"剧透"，发现还是有点坑的。
+	看了一下题目觉得还挺简单的，但是看了"剧透"，发现还是有点坑的。但整体的编码异常简单。
+	
+	
+code:
+	
+	public class Solution {
+    public int reverse(int x) {
+        int result = 0;
+        String tempResult = "";
+        Boolean isPositive = true;
+        //判断正负
+        if(x<0){
+            x = -x;
+            isPositive = false;
+        }
+        //转换成String，并用String进行反转
+        tempResult = String.valueOf(x);
+        tempResult = new StringBuffer(tempResult).reverse().toString();
+        //String转成int，并注意溢出
+        try{
+            result = Integer.parseInt(tempResult);
+            if(!isPositive){
+                result = -result;
+            }
+        }catch(Exception e){
+        //溢出则返回0
+            result = 0;
+        }
+        //返回结果
+        return result;
+    }
+	}
