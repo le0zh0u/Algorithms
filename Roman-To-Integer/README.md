@@ -136,3 +136,4 @@ coding:
 ending:
 	
 	虽然说做出来了，但并不满意，因为在提交过程中，发现自己漏考虑了很多东西，这个答案是提交提出来的，诶。
+	卧槽，点金more detail，显示"You are here! Your runtime beats 0.84% of java submissions"。击败了百分之零点八四，我是有多水额。智商不够咋办。
